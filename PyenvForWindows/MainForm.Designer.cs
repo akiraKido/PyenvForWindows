@@ -1,6 +1,6 @@
 ﻿namespace PyenvForWindows
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.InstalledPython_ListBox = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // InstalledPython_ListBox
+            // 
+            this.InstalledPython_ListBox.FormattingEnabled = true;
+            this.InstalledPython_ListBox.ItemHeight = 12;
+            this.InstalledPython_ListBox.Location = new System.Drawing.Point(12, 12);
+            this.InstalledPython_ListBox.Name = "InstalledPython_ListBox";
+            this.InstalledPython_ListBox.Size = new System.Drawing.Size(259, 208);
+            this.InstalledPython_ListBox.TabIndex = 0;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.InstalledPython_ListBox);
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox InstalledPython_ListBox;
     }
 }
 
